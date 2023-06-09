@@ -1,0 +1,257 @@
+*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role="list"],ol[role="list"]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+body{
+	font-family: arial;
+}
+
+.alignLeft{
+	text-align: left;
+}
+
+#dashboardMainContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+div.dashboard_sidebar{
+    width: 20%;
+    background: #323232;
+    height: 100vh;
+}
+
+div.dashboard_content_container{
+    width: 80%;
+    background: #f4f6f9;
+}
+
+h3.dashboard_logo{
+    color: #f685a1;
+    font-size: 80px;
+    text-align: center;
+}
+
+div.dashboard_sidebar_user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #fff;
+}
+
+div.dashboard_sidebar_user img{
+    width: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #f685a1;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+div.dashboard_sidebar_user span{
+    top: 20%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+ul.dashboard_menu_lists{
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+ul.dashboard_menu_lists li.liMainMenu{
+  list-style-type: none;
+  padding: 15px 0px;
+  text-transform: uppercase;
+}
+
+ul.dashboard_menu_lists li.liMainMenu a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  padding: 0px 15px;
+  padding-bottom: 15px;
+  padding-right: 0px;
+}
+
+ul.dashboard_menu_lists li.liMainMenu a i{
+  font-size: 23px;
+  width: 30px;
+}
+ul.dashboard_menu_lists li.menuActive{
+  background: #f685a1;
+  color: #fff;
+}
+ul.dashboard_menu_lists li:hover{
+  background: #f685a1;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+div.dashboard_topNav{
+  background: #fff;
+  padding: 20px;
+}
+
+div.dashboard_topNav a{
+  color: #848383;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a#logoutBtn{
+  float: right;
+}
+
+div.dasboard_content{
+  padding: 50px 10px 10px 10px;
+}
+
+div.dasboard_content_main{
+  background: #fff;
+  min-height: 800px;
+  height: 100%;
+}
+
+form::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+form.appForm{
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #cecfd0;
+  border-radius: 5px;
+  background: #f4f6f9;
+}
+
+form label{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form input.appFormInput{
+  width: 100%;
+  height: 33px;
+  border: 1px solid #d6d7da;
+  border-radius: 5px;
+}
+
+div.appFormInputContainer{
+  margin-bottom: 15px;
+}
+
+div#userAddFormContainer{
+  padding-top: 100px;
+}
+
+button.appBtn{
+  background: #f685a1;
+  border: 1px solid #f685a1;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  float: right;
+}
+
+p.responseMessage{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 33px;
+  padding: 20px;
+}
+
+p.responseMessage_error{
+  background: rgba(128, 0, 0, 0.1);
+}
+
+p.responseMessage_success{
+  background: rgba(0, 128, 0, 0.1);
+}
+
+/* User add page */
+div.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div.column{
+  width: 100%;
+  padding: 0px 10px;
+}
+
+div.column-5{
+  width: 41.67%;
+}
+div.column-7{
+  width: 58.33%;
+}
+
+h1.section_header{
+  font-size: 21px;
+  color: #f685a1;
+  border-bottom: 1px solid #ffd7e1;
+  padding-bottom: 11px;
+  padding: 10px;
+  border-left: 4px solid #f690bf;
+  margin-bottom: 15px;
+}
+
+table, th, td{
+  border: 1px solid #cacaca;
+  border-collapse: collapse;
+}
+
+table{
+  width: 100%;
+}
+
+table th{
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #f4f6f9;
+}
+
+table td{
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+p.userCount{
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f685a1;
+}
+
+ a.subMenuLink{
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: none;
+  font-size: 15px;
+ }
+
+ a.subMenuLink i{
+  font-size: 16px;
+ }
+
+ ul.subMenus{
+  background: #c26a80;
+  display: none;
+ }
+
+ i.mainMenuIconArrow{
+  float: right;
+  font-size: 19px;
+  margin-top: 7px;
+ }

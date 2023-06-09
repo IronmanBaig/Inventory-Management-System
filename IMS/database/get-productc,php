@@ -1,0 +1,16 @@
+<?php
+include('connection.php');
+
+$id = $_GET['id'];
+
+// fetch suppliers.
+$stmt = $conn->prepare("
+    SELECT products.product_name, products.price
+        FROM products
+        WHERE 
+          products.id = $id
+    ");
+$stmt->execute();
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+echo json_encode($products);
